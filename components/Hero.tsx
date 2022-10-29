@@ -16,30 +16,32 @@ export default function Hero({pageInfo}:Props) {
       "<ButLovesToCodeMore />",
     ],
     loop: true,
-    delaySpeed: 2300,
+    delaySpeed: 2500,
+    typeSpeed:100,
+    deleteSpeed:100
   });
   return (
     <motion.div 
     initial={{opacity:0, y:200}}
     transition={{duration:2,  bounce: 0.5, type: "spring"}}
     whileInView={{opacity:1, y:0}}
-    className="flex h-screen flex-col space-y-5 md:space-y-8 items-center justify-center text-center overflow-hidden pt-52 md:pt-32 ">
+    className="flex h-screen flex-col space-y-5 md:space-y-8 items-center justify-center text-center overflow-hidden pt-44 md:pt-32 ">
       <BackgroundCircle />
       <img
         src={urlFor(pageInfo?.heroImage).url()}
-        className="w-32 h-32 lg:w-44 lg:h-44 rounded-full object-cover"
+        className="w-32 h-32 lg:w-44 lg:h-44 rounded-full object-cover mt-[-50px] md:mt-16"
         alt="profile"
       />
       <div className="max-w-[95%] break-words">
         <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px]">
           {pageInfo?.role}
         </h2>
-        <h1 className="text-slate-500 text-5xl lg:text-6xl px-10 font-semibold min-h-[150px] md:min-h-0 md:my-2">
+        <h1 className="text-slate-500 text-3xl md:text-5xl lg:text-6xl px-10 font-semibold min-h-[120px] md:min-h-0 md:my-2">
           <span className="">{text}</span> <Cursor cursorColor="#6AF2F0" />{" "}
         </h1>
       </div>
 
-      <div className="flex gap-5 flex-wrap justify-center relative z-30">
+      <div className="flex gap-2 md:gap-5 !mt-[-10px] md:!md-0 flex-wrap justify-center relative z-30">
         <Link href="#about">
           <button className="heroButton cursor-pointer">About</button>
         </Link>

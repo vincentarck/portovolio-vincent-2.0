@@ -21,7 +21,7 @@ export default function ExperienceCard({ data }: Props) {
       />
 
       <div className="space-y-3 px-5 sm:px-10 lg:px-28">
-        <h4 className="text-3xl md:text-4xl font-light">{data?.jobTitle}</h4>
+        <h4 className="text-2xl md:text-4xl font-light">{data?.jobTitle}</h4>
         <div className="flex justify-between w-max items-center p-2 relative">
           <p className="text-xl md:text-2xl font-semibold">{data?.company}</p>
           <div className="pt-1 ml-2">

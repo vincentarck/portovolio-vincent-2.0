@@ -25,12 +25,12 @@ export default function About({ about }: Props) {
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ bounce: 0.5, type: "spring", duration: 1 }}
       >
-        <h4 className="text-4xl font-semibold">
+        <h4 className="text-3xl md:text-4xl font-semibold">
           Here is a{" "}
           <span className="underline decoration-[#6AF2F0]/60">little</span>{" "}
           background
         </h4>
-        <div className="!mb-36 sm:mb-0 relative overflow-y-scroll scrollbar-none max-h-72">
+        <div className="!mb-36 sm:mb-0 text-sm md:text-base relative overflow-y-scroll scrollbar-none max-h-56">
           {about.backgroundInformation}
           <div className="sticky bottom-0 h-8 w-full backdrop-blur-[3px]"></div>
         </div>

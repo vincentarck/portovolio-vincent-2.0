@@ -14,7 +14,7 @@ export default function WorkExperience({ experiences }: Props) {
       transition={{ duration: 1.5 }}
       className="h-screen flex relative overflow-hidden flex-col text-left max-w-full px-5 md:px-10 justify-evenly items-center mx-auto pt-20 "
     >
-      <h3 className="uppercase text-gray-400 tracking-[20px] text-2xl">
+      <h3 className="uppercase text-gray-400 tracking-[20px] mb-5 md:mb-0 text-xl md:text-2xl">
         Experience
       </h3>
 
