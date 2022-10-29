@@ -70,10 +70,10 @@ const Home = ({ pageInfo, experiences, skills, projects, socials }: Props) => {
           <div className="flex items-center justify-center">
             <Image
               src="/profile.png"
-              width={40}
-              height={40}
+              width={45}
+              height={45}
               alt="footer"
-              className="rounded-full gracycale hover:grayscale-0"
+              className="rounded-full gracycale hover:grayscale-0 object-cover"
             />
           </div>
         </footer>
