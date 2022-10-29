@@ -19,7 +19,7 @@ export default function Skilll({ skill }: Props) {
         }}
         whileInView={{ opacity: 1, x: 0 }}
         src={urlFor(skill?.image).url()}
-        className="rounded-full border border-gray-400 object-cover w-24 h-24 md:w-28 md:h-28 xl:w-32 xl:h-32 filter group-hover:grayscale transition duration-300 ease-in-out object-cover"
+        className="rounded-full border border-gray-400 object-cover w-24 h-24 md:w-28 md:h-28 xl:w-32 xl:h-32 filter group-hover:grayscale transition duration-300 ease-in-out"
       />
       <div className="w-24 h-24 md:w-28 md:h-28 xl:w-32 xl:h-32 absolute opacity-0 hover:opacity-80  transition duration-300 ease-in-out group-hover:bg-white rounded-full z-0">
         <div className="flex flex-col justify-center items-center h-full text-center">
